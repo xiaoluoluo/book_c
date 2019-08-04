@@ -1,0 +1,26 @@
+/* pages/takePhoto/takePhoto.wxss */
+page{
+  width: 100%; 
+  height: 100%; 
+  /* background: #fe9d20; */
+}
+.takephoto{
+  border-radius: 999px; 
+  box-shadow: 0 0 50rpx #ffd8a2;
+}
+.biaochi{
+  background:#38a4fc;
+  position: absolute;
+}
+.ptext{
+  color: white;
+  font-weight: 700;
+  width: 30rpx; 
+  font-size: 28rpx; 
+  word-wrap: break-word; 
+  letter-spacing: 25rpx;
+   position: absolute;
+   margin-left: 40rpx;
+   margin-top: 50%;
+  
+}

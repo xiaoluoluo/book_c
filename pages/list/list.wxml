@@ -1,0 +1,57 @@
+
+<view class="gradlerowline">
+<text bindtap="toShowModal">{{choosetitle}}</text>
+</view>
+<view class="modal-mask" bindtap="hideModal" wx:if="{{showModal}}"></view>
+<view wx:if="{{showModal}}">
+  <view class="modal-content">
+   <view class="rowline2">
+     <view class="gradlerowline2">
+     	 <button   data-index="1" bindtap="choosegradle" class="{{clickindex ===1 ?'cgradle':'gradle2'}}" >
+		    <text >{{subjectarry[1]}}</text>
+	      </button>
+         <button data-index="2" bindtap="choosegradle" class="{{clickindex ===2 ?'cgradle':'gradle2'}}" >
+		    <text >{{subjectarry[2]}}</text>
+	      </button>
+         <button data-index="3" bindtap="choosegradle" class="{{clickindex ===3 ?'cgradle':'gradle2'}}" >
+		     <text >{{subjectarry[3]}}</text>
+	      </button>
+     </view>
+   </view>
+     <view class="rowline2">
+     <view class="gradlerowline2">
+     	 <button   data-index="4" bindtap="choosegradle" class="{{clickindex ===4 ?'cgradle':'gradle2'}}" >
+		    <text >{{subjectarry[4]}}</text>
+	      </button>
+         <button data-index="5" bindtap="choosegradle" class="{{clickindex ===5 ?'cgradle':'gradle2'}}" >
+		    <text >{{subjectarry[5]}}</text>
+	      </button>
+         <button data-index="6" bindtap="choosegradle" class="{{clickindex ===6 ?'cgradle':'gradle2'}}" >
+		     <text >{{subjectarry[6]}}</text>
+	      </button>
+     </view>
+        <button data-index="0" bindtap="choosegradle" class="{{clickindex ===0 ?'cgradle':'gradle2'}}" >
+		     <text >{{subjectarry[0]}}</text>
+	      </button>
+   </view>
+      <button class='btn' bindtap="onChoose">确定</button>
+    </view>
+  </view>
+
+
+<view>
+ <scroll-view class="scroll" scroll-top="{{scrollTop}}"  lower-threshold="200" style="height:100%;" scroll-y="true" bindscroll="scrll"  bindscrolltolower="loadMore" >
+   <view  wx:for="{{listLi}}" wx:for-item="item" wx:key="{{index}}">
+    <view class="tmpContainer"   catchtap="toDetail" data-id="{{index}}" >
+    <view class="avatar_date">
+      <image src='{{item.User.user_head_pic}}'></image>
+      <text>{{item.User.user_name}}</text>
+    </view>
+    <text class="company">{{item.Question.question_title}}</text>
+    <image class="content_img" src="{{item.Question.answer_pic+imgpostfix}}"></image>
+    <text class="content">{{item.Question.true_title}}</text>
+  </view>
+   </view>  
+  </scroll-view>
+</view>
+

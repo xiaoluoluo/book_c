@@ -1,0 +1,48 @@
+<!--pages/compile.wxml-->
+<view  class="content">
+ <view class="photo1">
+   <view>
+     <text class="Ttix">题目:</text>
+     	<image wx:if="{{!iputvalue1}}" class="iconimage" bindtap="addclick1"src='/images/icon/pen.png'></image>
+     <input wx:if="{{iputvalue1}}" class="errtix1"  placeholder="请输入题目" bindblur="inputEvent1">
+     </input>
+   </view>
+    	<view  class='imagebg1'>
+	   	<image  class="image1"  src='{{image1?(image1+imgpostfix):loadingimg}}' ></image>
+    	</view>
+       <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+       <text class="Ttix">科目:</text>
+      	<image  id="selectimg"    class="picker" style="display:{{opacity}}"src='/images/icon/select1.png'></image>
+        <text class="Ttix">{{array[index]}}</text>
+       </picker>
+ </view>
+ <view class="photo2">
+     <text class="Ttix">错解:</text>
+     	<image wx:if="{{!iputvalue2}}" class="iconimage" bindtap="addclick2"src='/images/icon/pen.png'></image>
+     <textarea wx:if="{{iputvalue2}}" class="errtix" bindblur="inputEvent2"  placeholder="请输入错误思路">
+     </textarea>
+     <!-- {{clickindex ===7?'cgradle':'gradle2'}} -->
+      <view wx:if="{{!upload1}}"  class='imagebg2'>
+        <button  bindtap='uploadphoto1' class="{{!upload1?'uploadbtn':'uploadbtnclick'}}">{{!upload1?"上传/拍照":"修改"}}</button>
+    	</view>
+     	<image wx:if="{{upload1}}" class="image2"src='{{image2+imgpostfix}}'>
+        
+       </image>
+        <button  wx:if="{{upload1}}" bindtap='uploadphoto1' class="{{!upload1?'uploadbtn':'uploadbtnclick'}}">{{!upload1?"上传/拍照":"修改图片"}}</button>
+ </view>
+  <view class="photo3">
+     <text class="Ttix">正解:</text>
+     	<image wx:if="{{!iputvalue3}}" class="iconimage" bindtap="addclick3"src='/images/icon/pen.png'></image>
+     <textarea wx:if="{{iputvalue3}}" class="errtix" bindblur="inputEvent3" placeholder="请输入正确思路">
+     </textarea>
+      <view wx:if="{{!upload2}}"  class='imagebg2'>
+       <button  bindtap='uploadphoto2' class="{{!upload2?'uploadbtn':'uploadbtnclick'}}">{{!upload2?"上传/拍照":"修改图片"}}</button>
+    	</view>
+      	 <image wx:if="{{upload2}}" class="image3" src='{{image3+imgpostfix}}'>
+         </image>
+           <button wx:if="{{upload2}}" bindtap='uploadphoto2' class="{{!upload2?'uploadbtn':'uploadbtnclick'}}">{{!upload2?"上传/拍照":"修改图片"}}  </button>
+    
+ </view>
+  <button  wx:if="{{!itemdata}}" bindtap='uploadall' class='uploadbtn2'>确认</button>
+  <button  wx:if="{{itemdata}}" bindtap='amend' class='uploadbtn2'>确认修改</button>
+</view>

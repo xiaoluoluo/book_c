@@ -1,0 +1,80 @@
+
+<view class="gradlerowline">
+<text bindtap="toShowModal">{{choosetitle}}</text>
+</view>
+<view class="modal-mask" bindtap="hideModal" wx:if="{{showModal}}"></view>
+<view wx:if="{{showModal}}">
+  <view class="modal-content">
+   <view class="rowline2">
+     <view class="gradlerowline2">
+     	 <button   data-index="1" bindtap="choosegradle" class="{{clickindex ===1 ?'cgradle':'gradle2'}}" >
+		    <text >{{subjectarry[1]}}</text>
+	      </button>
+         <button data-index="2" bindtap="choosegradle" class="{{clickindex ===2 ?'cgradle':'gradle2'}}" >
+		    <text >{{subjectarry[2]}}</text>
+	      </button>
+         <button data-index="3" bindtap="choosegradle" class="{{clickindex ===3 ?'cgradle':'gradle2'}}" >
+		     <text >{{subjectarry[3]}}</text>
+	      </button>
+     </view>
+   </view>
+     <view class="rowline2">
+     <view class="gradlerowline2">
+     	 <button   data-index="4" bindtap="choosegradle" class="{{clickindex ===4 ?'cgradle':'gradle2'}}" >
+		    <text >{{subjectarry[4]}}</text>
+	      </button>
+         <button data-index="5" bindtap="choosegradle" class="{{clickindex ===5 ?'cgradle':'gradle2'}}" >
+		    <text >{{subjectarry[5]}}</text>
+	      </button>
+         <button data-index="6" bindtap="choosegradle" class="{{clickindex ===6 ?'cgradle':'gradle2'}}" >
+		     <text >{{subjectarry[6]}}</text>
+	      </button>
+     </view>
+       <button data-index="0" bindtap="choosegradle" class="{{clickindex ===0 ?'cgradle':'gradle2'}}" >
+		     <text >{{subjectarry[0]}}</text>
+	      </button>
+   </view>
+      <button class='btn' bindtap="onChoose">确定</button>
+    </view>
+  </view>
+
+ <view class="titlephon">
+  <image   bindtap='uploadImage'  class="image2"  src='/images/icon/phon.png'></image>
+   <image    class="image3"  src='/images/book/arrowleft.png'></image>
+    <text>{{remindertex}} </text>   
+ </view>
+
+ <view class='container' wx:if="{{!havedata}}" >
+	<view class='reminder'>
+		<text  class='retop'>小提示</text>
+    <text  class='rebot'>1.拍摄照片最好采用横屏模式</text>
+    <text  class='rebot' >2.拍照完成后记得填写照片相关信息</text>
+	</view>
+</view>
+<view  wx:if="{{havedata}}" >
+ <text class="mybook">我的错题本 </text> 
+ <scroll-view class="scroll" scroll-top="{{scrollTop}}"  lower-threshold="200" style="height:100%;" scroll-y="true" bindscroll="scrll"  bindscrolltolower="loadMore" >
+   <view  wx:for="{{listLi}}" wx:for-item="item" wx:key="{{index}}">
+    <view class="tmpContainer" >
+    <view class="avatar_date">
+      <text class="timu">(题目)：{{item.question_title}}</text>
+      <text class="kemu">(科目)：{{showsub[index]}}</text>
+      <text class="delect" bindtap="deletedMyQuestion" data-id="{{index}}"> 删除</text>
+      <!-- <text class="share">分享</text> -->
+      <button bindtap="chooseshare" class="share" open-type="share" data-id="{{index}}"> 分享</button>
+     <!-- <button open-type='share' style="background-image:url(../imgs/book/share.png);" plain='true'></button> -->
+    </view>
+    
+    <!-- <text class="company">{{item.Question.question_title}}</text> -->
+    <image class="content_img"   catchtap="toDetail" data-id="{{index}}"  src='{{item.answer_pic?(item.answer_pic+imgpostfix):loadingimg}}' ></image>
+    <text class="content">{{item.true_title}}</text>
+     <!-- <view class="love_attention">
+      <image src="/images/icon/chat.png"></image>
+      <text>80</text>
+      <image src="/images/icon/view.png"></image>
+      <text>100</text>
+    </view> -->
+  </view>
+   </view>  
+  </scroll-view>
+  </view>

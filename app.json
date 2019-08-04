@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/movies/movies",
+    "pages/movieDetail/movieDetail",
+    "pages/detail/detail",
+    "pages/mine/mine",
+    "pages/compile/compile",
+    "pages/upload/upload",
+    "pages/takePhoto/takePhoto",
+    "pages/takePhoto/upload",
+    "pages/cropper/cropper",
+    "pages/image-cropper/image-cropper",
+    "pages/cropper2/index"
+
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#489B81",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "广场",
+        "iconPath": "/images/tab/world2.png",
+        "selectedIconPath": "/images/tab/world1.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "错题本",
+        "iconPath": "/images/tab/camer2.png",
+        "selectedIconPath": "/images/tab/camer1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/images/tab/man2.png",
+        "selectedIconPath": "/images/tab/man1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

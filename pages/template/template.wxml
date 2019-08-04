@@ -1,0 +1,22 @@
+<!--pages/template/template.wxml-->
+<template name="detailTemplate">
+  <view class="tmpContainer">
+
+    <view class="avatar_date">
+      <image src='{{User.user_head_pic}}'></image>
+      <text>{{User.user_name}}</text>
+    </view>
+
+    <text class="company">{{Question.question_title}}</text>
+    <image class="content_img" src="{{Question.answer_pic}}"></image>
+    <text class="content">{{Question.question_title}}</text>
+
+     <!-- <view class="love_attention">
+      <image src="/images/icon/chat.png"></image>
+      <text>80</text>
+      <image src="/images/icon/view.png"></image>
+      <text>100</text>
+    </view> -->
+    
+  </view>
+</template>

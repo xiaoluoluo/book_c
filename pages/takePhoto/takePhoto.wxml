@@ -1,0 +1,21 @@
+<!--pages/takePhoto/takePhoto.wxml-->
+<view style='width:{{width}}px; height:{{height}}px; overflow:hidden; background:#030301;'>
+    <camera device - position="back" flash = "off" style="width:{{width}}px; height:{{height}}px; margin-left:0px">
+    <cover-image src='{{makephoto}}' bindtap='takePhoto' style='width:100rpx; height:100rpx; position:absolute; bottom:20rpx; left:44%;'> </cover-image>
+        <cover-image src='{{giveup}}' bindtap='giveup' style='width:70rpx; height:70rpx; position:absolute; bottom:35rpx; left:80%;'> </cover-image>
+ 
+ <cover-image src='/images/book/text.png' style='width:70rpx; height:370rpx;top:250rpx;  position:absolute;left:10rpx;' > 
+ 
+ </cover-image>
+  <!--上部线条 -->
+  <cover-view wx:if="{{!takep}}"  class= 'biaochi' style = 'top:{{pointx}}px; left:{{pointx}}px; width:{{pwidth}}px; height:2px;'> </cover-view>
+  <!--下部线条 -->
+  <cover-view wx:if="{{!takep}}"  class= 'biaochi' style = 'top:{{pointx+pheight}}px; left:{{pointx}}px; width:{{pwidth}}px; height:2px;'> </cover-view>
+  <!--右部线条 -->
+  <cover-view wx:if="{{!takep}}" class= 'biaochi' style = 'top:{{pointx}}px; left:{{pointx+pwidth}}px; width:2px; height:{{pheight}}px;'> </cover-view>
+  <!--左部线条 -->
+  <cover-view wx:if="{{!takep}}" class= 'biaochi' style = 'top:{{pointx}}px; left:{{pointx}}px; width:2px; height:{{pheight}}px;'> </cover-view>
+  
+
+  </camera>
+</view> 

@@ -1,0 +1,143 @@
+/* pages/compile.wxss */
+.content {
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+}
+.photo1 {
+
+	flex-direction: column;
+  margin-top: 50 rpx;
+	/* align-items: center; */
+}
+.Ttix {
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 10rpx;
+}
+.errtix {
+  font-size: 14px;
+  margin-left: 10rpx;
+  height: 200rpx;
+}
+.errtix1 {
+  font-size: 14px;
+  margin-left: 10rpx;
+}
+.righttix {
+  font-size: 14px;
+  margin-left: 10rpx;
+ 
+}
+.photo2 {
+  margin-top: 30rpx;
+	flex-direction: column;
+	/* align-items: center; */
+}
+
+.photo3 {
+	flex-direction: column;
+}
+.image1 {
+ width: 96%;
+  height:320rpx;
+  margin-left: 2%;
+  margin-top: 10rpx;
+
+}
+.image2 {
+  width: 100%;
+  height:340rpx;
+}
+.image3 {
+   width: 100%;
+   height:340rpx;
+}
+.imagebg1 {
+  width: 98%;
+  height:340rpx;
+  margin-left: 1%;
+  border: 1px solid #405f80;
+	border-radius: 2px;
+}
+.imagebg2 {
+  width: 98%;
+  height:200rpx;
+  margin-left: 1%;
+	border-radius: 2px;
+  background-color: #f2f2f2;
+  padding-top: 150rpx;
+}
+.iconimage {
+   width:32rpx;
+   height:32rpx;
+   margin-left: 10rpx;
+   padding-top:10rpx;
+}
+.picker {
+   width:35rpx;
+   height:35rpx;
+   margin-left: 10rpx;
+   padding-top:10rpx;
+}
+.uploadbtn {
+  margin-left: 40%;
+  /* padding-top: 100rpx; */
+	width: 180rpx;
+	height: 70rpx;
+	border: 1px solid #405f80;
+	border-radius: 5px;
+	font-size: 26rpx;
+	line-height: 70rpx;
+	text-align: center;
+}
+.uploadbtnclick {
+  margin-left: 40%;
+  /* padding-top: 100rpx; */
+	width: 180rpx;
+	height: 70rpx;
+	border: 1px solid #405f80;
+	border-radius: 5px;
+	font-size: 26rpx;
+	line-height: 70rpx;
+	text-align: center;
+  color:  #405f80;
+  opacity: 0.5;
+}
+.uploadbtn2 {
+  margin-left: 40%;
+  margin-top: 50rpx;
+    margin-bottom: 100rpx;
+	width: 180rpx;
+	height: 70rpx;
+	border: 1px solid #405f80;
+	border-radius: 5px;
+	font-size: 26rpx;
+	line-height: 70rpx;
+	text-align: center;
+ 
+}
+
+.container {
+    box-sizing:border-box;
+	padding:20px;
+} 
+.previewimg{
+	float:left;
+	width:45%;
+	height:200px;
+	margin:2%;
+}
+.previewimg image{
+	width:100%;
+	height:100%;
+}
+.bottombtn{
+	height:600rpx;
+  width: 100%;
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+  	border: 1px solid #405f80;
+   margin-bottom: 80rpx;
+}

@@ -1,0 +1,93 @@
+<view class='container'>
+
+	<!-- <image src='{{userInfo.avatarUrl}}'></image> -->
+    <text class="username">温故而知新...</text>
+  <view  class='textitle' >
+   	<text  class="username">和我们一起,沉淀和交流错题吧!</text>
+  </view>
+
+  <view class="miancontent">
+   <view class="rowline">
+     <text class="grade">高中</text>
+  </view>
+  <view class="rowline2">
+     <view class="gradlerowline">
+     	 <button   data-index="1" bindtap="choosegradle" class="{{clickindex ===1 ?'cgradle':'gradle2'}}" >
+		    <text >高一</text>
+	      </button>
+         <button data-index="2" bindtap="choosegradle" class="{{clickindex ===2 ?'cgradle':'gradle2'}}" >
+		    <text >高二</text>
+	      </button>
+         <button data-index="3" bindtap="choosegradle" class="{{clickindex ===3 ?'cgradle':'gradle2'}}" >
+		     <text >高三</text>
+	      </button>
+     </view>
+  </view>
+  <view class="rowline">
+    <text class="grade">初中</text>
+  </view>
+  <view class="rowline2">
+     <view class="gradlerowline">
+     	 <button data-index="4" bindtap="choosegradle"    class="{{clickindex ===4?'cgradle':'gradle2'}}"  >
+		    <text >初一</text>
+	      </button>
+         <button data-index="5" bindtap="choosegradle"  class="{{clickindex ===5?'cgradle':'gradle2'}}" >
+		    <text >初二</text>
+	      </button>
+         <button  data-index="6" bindtap="choosegradle" class="{{clickindex ===6?'cgradle':'gradle2'}}">
+		    <text >初三</text>
+	      </button>
+     </view>
+  </view>
+  
+  <view class="rowline">
+     <text class="grade">小学</text>
+  </view>
+  <view class="rowline2">
+     <view class="gradlerowline">
+     	 <button data-index="7" bindtap="choosegradle"   class="{{clickindex ===7?'cgradle':'gradle2'}}"  >
+		    <text >一年级</text>
+	      </button>
+         <button data-index="8" bindtap="choosegradle" class="{{clickindex ===8?'cgradle':'gradle2'}}"  >
+		    <text >二年级</text>
+	      </button>
+         <button data-index="9" bindtap="choosegradle" class="{{clickindex ===9?'cgradle':'gradle2'}}"  >
+		    <text >三年级</text>
+	      </button>
+     </view>
+  </view>
+    <view class="rowline2">
+     <view class="gradlerowline">
+     	  <button data-index="10" bindtap="choosegradle" class="{{clickindex ===10?'cgradle':'gradle2'}}"  >
+		    <text >四年级</text>
+	      </button>
+        <button data-index="11" bindtap="choosegradle" class="{{clickindex ===11?'cgradle':'gradle2'}}"  >
+		    <text >五年级</text>
+	      </button>
+        <button data-index="12" bindtap="choosegradle" class="{{clickindex ===12?'cgradle':'gradle2'}}"  >
+		    <text >六年级</text>
+	      </button>
+     </view>
+  </view>
+    <view class="rowline">
+    <text class="grade">学前</text>
+  </view>
+  <view class="rowline2">
+     <view class="gradlerowline">
+     	  <button data-index="13" bindtap="choosegradle"  class="{{clickindex ===13?'cgradle':'gradle2'}}"  >
+		     <text >学前班</text>
+	      </button>
+         <button  class='gradle2' style="opacity:0;">
+		    <text >初二</text>
+	      </button>
+         <button  class='gradle2'  style="opacity:0;">
+		    <text >初三</text>
+	      </button>
+     </view>
+  </view>
+
+  </view>
+	<button  class='goStudy' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">
+		<text >进入</text>
+	</button>
+</view>

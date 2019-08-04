@@ -1,0 +1,212 @@
+page{
+    width: 100%;
+    height: 100%
+
+}
+.top {
+
+  width: 100rpx;
+
+  height: 100rpx;
+
+  line-height: 100rpx;
+
+  background-color: #fff;
+
+  position: fixed;
+
+  bottom: 40rpx;
+
+  right: 20rpx;
+
+  text-align: center;
+
+  font-size: 50rpx;
+
+  opacity: .8;
+
+  border-radius: 50%;
+
+  border: 1px solid #fff; 
+
+}
+/* pages/template/template.wxss */
+.tmpContainer {
+  display: flex;
+  flex-direction: column;
+  border-top:1px solid #efefef;
+  border-bottom:1px solid #efefef;
+  padding:5px 0;
+  margin:20rpx 0 40rpx;
+}
+
+.avatar_date {
+  margin:10rpx 0 20rpx 10rpx;
+}
+
+.avatar_date image {
+  width: 60rpx;
+  height:60rpx;
+  border-radius: 100rpx;
+  vertical-align: middle;
+}
+
+.avatar_date text {
+  font-size: 14px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.company {
+  font-size: 18px;
+  font-weight: 700;
+  margin:10rpx 0;
+}
+
+.content_img {
+  width: 100%;
+  height:340rpx;
+}
+
+.content {
+  font-size: 16px;
+  color: #666;
+  text-indent: 16px;
+  line-height: 28px;
+}
+
+.love_attention {
+
+}
+
+.love_attention image {
+  width:32rpx;
+  height:32rpx;
+  vertical-align: middle;
+}
+
+.love_attention text {
+  font-size: 14px;
+  color: #666;
+  vertical-align: middle;
+  margin:0 16rpx;
+}
+/* for custom modal */
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 600rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 45%;
+  left: 0;
+  z-index: 9500;
+  margin: -180rpx 70rpx;
+}
+
+.modal-photo {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  z-index: 9999;
+  margin: -180rpx 250rpx;
+}
+
+.modal-content {
+  position: fixed;
+  top: 30%;
+  left: 0;
+  z-index: 9500;
+  width: 500rpx;
+  height: 36%;
+  overflow: hidden;
+  padding: 120rpx 50rpx 50rpx;
+  background: #fff;
+  margin: -180rpx 70rpx;
+  border-radius:5rpx;
+}
+
+.teacher_name_modal {
+  color: #212121;
+  font-size: 40rpx;
+  line-height: 1;
+  width: 70%;
+  float: left;
+}
+
+.contact_modal {
+  width: 25%;
+  float: right;
+  margin-right: 5%;
+}
+
+.btn {
+  width: 130rpx;
+  height: 70rpx;
+  font-size: 28rpx;
+  border: solid 1rpx rgb(150, 220, 248);
+  background: rgba(152, 230, 250, 0.3);
+  margin-bottom: 20rpx; 
+  margin-top: 50rpx;
+}
+.gradlerowline{
+  height: 80rpx;
+  width: 100%;
+	display: flex;
+  flex-direction: row;
+	align-items: center;
+	justify-content:center;
+}
+.gradlerowline text{
+  font-size: 15px;
+  font-weight: 700;
+}
+.rowline2{
+  width: 100%;
+}
+.gradlerowline2{
+  height: 100rpx;
+  width: 90%;
+	margin-left:5%;
+	display: flex;
+  flex-direction: row;
+	align-items: center;
+	justify-content:space-between;
+}
+.gradle2 {
+	width: 120rpx;
+	height: 70rpx;
+	border: 1px solid #405f80;
+	border-radius: 5px;
+	font-size: 20rpx;
+	line-height: 70rpx;
+	text-align: center;
+  background: #ffffff;
+}
+.cgradle{
+  	width: 120rpx;
+	height: 70rpx;
+	border: 1px solid #405f80;
+	border-radius: 5px;
+	font-size: 20rpx;
+	line-height: 70rpx;
+	text-align: center;
+  background: yellow;
+}
+.gradle2 text{
+	font-size: 12px;
+  font-weight: 700;
+	
+}
